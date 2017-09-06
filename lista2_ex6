@@ -1,0 +1,25 @@
+
+# -*- coding: utf-8 -*-
+# Exercícios by Nick Parlante (CodingBat)
+
+# F. make_tags
+# make_tags('i', 'Yay'), '<i>Yay</i>'
+# make_tags('i', 'Hello'), '<i>Hello</i>'
+# make_tags('cite', 'Yay'), '<cite>Yay</cite>'
+def make_tags(tab, word):
+  return ('<%s> %s </%s>' %(tab,word,tab))
+
+#A ideia é escrever <> e colocar dentro %s que faz referência a uma string e dizer que o conteúdo dessa string será
+#o que está na variável tab, depois colocar %s para fazer referência a outra string e dizer que o conteúdo
+#a ser exibido está na variável word, por fim fazer </> e colocar no meio %s e dizer que o que será exibido
+# está na variável tab
+
+def test_ex06():
+  print ('Make Tags')
+  assert make_tags('i', 'Yay') == '<i>Yay</i>'
+  assert make_tags('i', 'Hello') == '<i>Hello</i>'
+  assert make_tags('cite', 'Yay') == '<cite>Yay</cite>'
+  assert make_tags('address', 'here') == '<address>here</address>'
+  assert make_tags('body', 'Heart') == '<body>Heart</body>'
+  assert make_tags('i', 'i') == '<i>i</i>'
+  assert make_tags('i', '') == '<i></i>'
