@@ -8,7 +8,9 @@
 # first_half('HelloThere') -> 'Hello'
 # first_half('abcdef') -> 'abc'
 def first_half(s):
-  return s[:len(s) / 2]
+  metade=len(s)
+  metade=metade/2
+  return s[:metade]
 
 #eu pego o vetor s e uso len para pegar o tamanho dele, com isso divido por 2, para pegar a primeira metade
 # do vetor e exibo isso. 
