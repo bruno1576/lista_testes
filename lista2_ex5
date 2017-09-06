@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# Exercícios by Nick Parlante (CodingBat)
+
+# E. hello_name
+# seja uma string name
+# hello_name('Bob') -> 'Hello Bob!'
+# hello_name('Alice') -> 'Hello Alice!'
+# hello_name('X') -> 'Hello X!'
+def hello_name(name):
+  return ('Hello %s!' %(name))
+
+#A ideia é pedir para escrever hello, coloco %s que faz referência a uma variável do tipo string e coloco um ponto
+#de exclamação ao final de tudo. Depois eu digo que a variável do tipo string é a variável name 
+
+# Eu coloco apenas para printar hello, chamo a variável com o nome da pessoa e depois coloco apenas !
+
+def test_ex05():
+  print ('Hello Name')
+  assert hello_name('Bob') == 'Hello Bob!'
+  assert hello_name('Alice') == 'Hello Alice!'
+  assert hello_name('X') == 'Hello X!'
+  assert hello_name('Hello') == 'Hello Hello!'
