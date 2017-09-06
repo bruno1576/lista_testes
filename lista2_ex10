@@ -1,0 +1,28 @@
+
+# -*- coding: utf-8 -*-
+# Exercícios by Nick Parlante (CodingBat)
+
+# J. roda2
+# rodar uma string s duas posições
+# a string possui pelo menos 2 caracteres
+# roda2('Hello') -> 'lloHe'
+# roda2('Hi') -> 'Hi'
+def roda2(s):
+  if len(s) <= 2:
+    return s
+  return s[2:] + s[:2]
+
+#A ideia é fazer uma estrutura onde se a string for menor ou igual a 2 você retorna ela pq não faz sentido rodar,
+# se não entrar na condição a cima você retorna os 2 caracteres finais da string e depois os 2 caracteres iniciais da string  
+
+
+def text_ex10():
+  print ('Roda 2')
+  assert roda2('Hello') == 'lloHe'
+  assert roda2('python') == 'thonpy'
+  assert roda2('Hi') == 'Hi'
+  assert roda2('code') == 'deco'
+  assert roda2('cat') == 'tca'
+  assert roda2('12345'), '34512'
+  assert roda2('Chocolate') == 'ocolateCh'
+  assert roda2('bricks') == 'icksbr'
