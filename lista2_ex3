@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+# Exercícios by Nick Parlante (CodingBat)
+
+# C. array_count9
+# conta quantas vezes aparece o 9 numa lista nums
+def array_count9(nums):
+  contador = 0
+  for num in nums:
+    if num == 9:
+      contador = contador+1
+  return contador
+  
+# A ideia é criar uma variável chamada contador valendo zero, mandar percorrer o vetor nums e a 
+# cada vez que for achado o número 9 na lista somar um número na variável contador
+# ao final mandar retornar o valor do contador
+
+def test_ex03():
+  print ('Array count 9')
+  assert array_count9([1, 99, 9]) == 1
+  assert array_count9([1, 9, 9]) == 2
+  assert array_count9([1, 9, 9, 3, 9]) == 3
+  assert array_count9([1, 2, 3]) == 0
+  assert array_count9([]) == 0
+  assert array_count9([4, 2, 4, 3, 1]) == 0
+  assert array_count9([9, 2, 99, 3, 1]) == 1
