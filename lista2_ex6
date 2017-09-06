@@ -7,7 +7,7 @@
 # make_tags('i', 'Hello'), '<i>Hello</i>'
 # make_tags('cite', 'Yay'), '<cite>Yay</cite>'
 def make_tags(tab, word):
-  return ('<%s> %s </%s>' %(tab,word,tab))
+  return '<%s> %s </%s>' %(tab,word,tab)
 
 #A ideia é escrever <> e colocar dentro %s que faz referência a uma string e dizer que o conteúdo dessa string será
 #o que está na variável tab, depois colocar %s para fazer referência a outra string e dizer que o conteúdo
